@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. The framework allows for any board dimension between and including, 3x3 and 9x9.
+1. The games board is representing an array data structure. More specifically a mulit dimensional int array.
+2. The function that is called to greet the player is greet().
+3. In this game I am required to implement init(), draw(), move(), and won().

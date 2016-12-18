@@ -1,0 +1,41 @@
+0.  BMP supports only 32-bit colors (over 4 billion colors in total)
+    GIF supports only 8-bits colors (256 colors in total)
+    JPEG supports only 24-bit colors (16 million colors in total)
+    PNG supports only 24-bit colors (16 million colors in total)
+1.  GIF
+2.  Lossy compression formats are file formats that when compressed will lose data/information 
+    from the original file.
+    Lossless compression formats are files that are able to retain all dat from a file even after 
+    compression.
+3.  JPEG
+4.  When a file is deleted from a FAT file system metadata that relates and indicates where a file is 
+    located is erased from the table, but the file remains on the hard drive.
+5.  To ensure that files I delete cannot be recovered a secure method such as zeroing out the file or
+    overwriting the file with nulls must be used.
+6.  stdint.h is a header file that defines specific integer types as having specific widths which are 
+    outlined by macros.
+7.  It is a way to be specific and to indicate to the computer that the int value that will be stored in 
+    the variable is exactly the size indicated (8,16,32).
+8.  A BYTE is 1 byte, a DWORD is 4 bytes, a LONG is 4 bytes and a WORD is 2 bytes.
+9.  Since the first two bytes must be used to indicate the file type and it is a WORD that is used to store the
+    file type value of BM (for BMP) is 0x4D42
+10. The difference between bfSize and biSize is that bfSize is used to indicate the size of the file and biSize 
+    is used to indicate the size of the current information that struct contains.
+11. If the value of biHeight is positive then the BMP is a bottom-up DIB with the origin at the lower left corner,
+    els if its negative it is top-down DIB with the origin in the top-left. (Basically indicated whether the headers
+    are flipped or not)
+12. The biBitCount member of the struct determines how many bits per pixel (color depth).
+13. fopen may return null if there is an error and it is unable to write to the location indicated. This could be 
+    because there is not enough memory or that there is already a file with that name.
+14. Within the definition of fread it is stated that it takes 4 parameters, pointer to where the bytes are to stored, 
+    the amount/size of bytes to be read in, the number of iterations or times to read in that many bytes and finally the 
+    file to read in from. The 1 that is being passed in every time is indicating that number of bytes should only be read
+    once.
+15. The value of 3 will be assigned to padding because 3*sizeof(RGBTRIPLE) = 3 pixels * 3 bytes per pixel = 9 and then 
+    9 % 4 = 1, and then 4 - 1 = 3 and finally 3 % 4 = 3. So, because of the value of 9 it causes the padding to increase 9 
+    to a multiple of 4 which is 12.
+16. Will skip over the padding which is known to be at the end of the row and to be of size padding. So, it just moves the pointer
+    enough spaces to pass over the padding.
+17. It is a integer constant that indicates the starting position of where to starting skipping or offsetting the pointer from in functions
+    like fseek.
+18. A man
